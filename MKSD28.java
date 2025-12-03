@@ -1,19 +1,25 @@
 package Kadmiel;
 
-public class MKSD11 {
+public class MKSD28 {
 
     public static void main(String[] args) {
         
         System.out.println("************************************************");
         System.out.println("* Aluno: Marcos Kadmiel Santos Dias - RA: 0024881"); 
-        System.out.println("* Classe MKSD11 - Exercício 11: Contar de 1 a 10");
+        System.out.println("* Classe MKSD28 - Exercício 28: Soma dos pares entre 1 e 100");
         System.out.println("************************************************");
         System.out.println("abaixo o restante do código "); 
         
-        System.out.println("\nContando de 1 a 10:");
+        int somaPares = 0;
+        int i = 1;
         
-        for (int i = 1; i <= 10; i++) {
-            System.out.println(i);
+        while (i <= 100) {
+            if (i % 2 == 0) { 
+                somaPares = somaPares + i;
+            }
+            i++;
         }
+        
+        System.out.println("\nA soma de todos os números pares entre 1 e 100 é: " + somaPares);
     }
 }

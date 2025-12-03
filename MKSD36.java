@@ -1,19 +1,22 @@
 package Kadmiel;
 
-public class MKSD11 {
+public class MKSD36 {
 
     public static void main(String[] args) {
         
         System.out.println("************************************************");
         System.out.println("* Aluno: Marcos Kadmiel Santos Dias - RA: 0024881"); 
-        System.out.println("* Classe MKSD11 - Exercício 11: Contar de 1 a 10");
+        System.out.println("* Classe MKSD36 - Exercício 36: Contagem regressiva de 10 até 1");
         System.out.println("************************************************");
         System.out.println("abaixo o restante do código "); 
         
-        System.out.println("\nContando de 1 a 10:");
+        System.out.println("\nContagem regressiva (do-while):");
         
-        for (int i = 1; i <= 10; i++) {
+        int i = 10;
+        
+        do {
             System.out.println(i);
-        }
+            i--; // Decremento
+        } while (i >= 1);
     }
 }
